@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="../Styles/mainStyle.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    
+    <!-- Navbar section --> 
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img decoding="async" src="./../Images/navBarIcon.png" class="img-fluid nav-img" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav  menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item mt-3 mt-lg-0">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="main-btn mt-0 fill-btn navLogin" style="border-radius: 20px; padding: 5px 15px;" onclick="login()";>Login</a>
+            </div>
+            
+          </nav>
+    </header>
+
+    <!-- Navbar section end -->
+
+    <!-- Banner section --> 
+    <section id="home" class="home">
+        <div class="banner_wrapper wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <h3>Healthy Life with</h3>
+                        <h1>Medi-Care Hospital</h1>
+                        <p>Join us to a fun and friendly environment. Our professionals are working so hard
+                            to see smile on your face that you deserve! We are dedicated about our duties.</p>
+                        <a href="#" class="main-btn mt-4 fill-btn">Appointment</a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="wrapper pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="./../Images/appoinmentIMG.png">
+                            </div>
+                            <div>
+                                <h4>Easy Appointment</h4>
+                                <p>Lorem Ipsum is simply is very dummy text of the printings and type setting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="../Images/EmergencyIMG.png">
+                            </div>
+                            <div>
+                                <h4>Emergency Service</h4>
+                                <p>Lorem Ipsum is simply is very dummy text of the printings and type setting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="../Images/24x7IMG.png">
+                            </div>
+                            <div>
+                                <h4>24/7 Service</h4>
+                                <p>Lorem Ipsum is simply is very dummy text of the printings and type setting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner section end -->
+
+    <!-- About section --> 
+    <section id="about" class="about_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-mb-0 mb-5">
+                    <div class="position-relative">
+                        <img decoding="async" src="../Images/about_Main.png" class="img-fluid">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>Welcome to a Family</h2>
+                    <p>lorum luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                        dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    <div class="mt-5 card">
+                        <div class="about-clinic">
+                            <h4>500+</h4>
+                            <p>Happy Patients</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>88+</h4>
+                            <p>Qualified Doctors</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>25+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>55+</h4>
+                            <p>Dental Awards</p>
+                        </div>
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section exit -->
+
+    <!-- Services section --> 
+    <section id="services" class="services_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3>Our Services</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box" >
+                            <img decoding="async" src="./../Images/DentalService.png">
+                        </div>
+                        <div>
+                            <h4>Dental Clinic</h4>
+                            <p>We  feel  that  anxiety  about  dentistry  is  unnecessarily  common  and  aim  to  reassure  you  that  consulting  a  dentist  need  not  be  feared  anymore  here  and  may  even  be  enjoyed  at  the  hospital  Dental  Care  Unit.</p>
+                            <!-- <a href="#" class="main-btn mt-4">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/EndoscopyServices.png">
+                        </div>
+                        <div>
+                            <h4>Endoscopy/ Colonoscopy/ Gastroscopy Units</h4>
+                            <p>We provide acute care to both the inpatient and outpatient, as well as screening procedures for diagnostic and preventative purposes. The Endoscopy Unit provides a broad range of endoscopic services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/OPDServices.png">
+                        </div>
+                        <div>
+                            <h4>24x7 OPD Service</h4>
+                            <p>The OPD observation Unit Unit provides care for patients with conditions which can be treated without the need for an overnight stay in hospital.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/ETUServices.png">
+                        </div>
+                        <div>
+                            <h4>Emergency Treatment Unit (ETU)</h4>
+                            <p>Urgent and emergency care is the range of healthcare services available to people who need medical advice, diagnosis and/or treatment quickly and unexpectedly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/LabServices.png">
+                        </div>
+                        <div>
+                            <h4>24x7 Labouratary Service</h4>
+                            <p>Accurate and timely laboratory results can be critical to a patient’s diagnosis and treatment. Laboratary provides a full range of diagnostic testing services  that are accurate , timely and cost effective for  patients and the medical profession.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/PharmacyService.png">
+                        </div>
+                        <div>
+                            <h4>Pharmacy</h4>
+                            <p>Better Health Care through a Good Hospital Pharmacy service. Pharmacy of NMH are experts in rational drug therapy for a speedier cure and faster recovery. Come and visit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/operatingServices.png">
+                        </div>
+                        <div>
+                            <h4>Fully Equipped Operating Theater</h4>
+                            <p>Medicare Hospitals operating theatres department is an innovative and forward looking department comprising of three operating theatres, covering a comprehensive range of surgical specialties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/physiotheraphyAbout.png">
+                        </div>
+                        <div>
+                            <h4>Physiotheraphy Unit</h4>
+                            <p>Physiotherapy aims to help you to optimize your mobility, function and independence. Hospital strives to provide an in-patient and out-patient service that is based on high standards of care and quality. Staff work closely with medical, nursing and other allied health staff.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <img decoding="async" src="./../Images/vaccinationAbout.png">
+                        </div>
+                        <div>
+                            <h4>Vaccination For Children & Adults</h4>
+                            <p>This Clinic runs a vaccination program that is on par with the National Vaccination Program. Be assured of the safety of yourself and that of your child through immunization against life-threatening diseases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section Exit -->
+
+    <!-- Team section --> 
+    <section id="team" class="team_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Our Doctors</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./../Images/doctorImg.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Darry Milin</h5>
+                            <p>Oral Surgeon</p>
+                            <p>MBBS (Colombo)</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./../Images/doctorImg.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Salman Ahmed</h5>
+                            <p>Oral Surgeon</p>
+                            <p>MBBS (Colombo)</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./../Images/doctorImg.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Santa Binte</h5>
+                            <p>Oral Surgeon</p>
+                            <p>MBBS (Colombo)</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./../Images/doctorImg.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Santa Binte</h5>
+                            <p>Oral Surgeon</p>
+                            <p>MBBS (Colombo)</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section Exit  -->
+
+
+    <!-- Testimonial section --> 
+    <section id="testimonial" class="testimonial_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <h3 class="text-black">Testimonials</h3>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img decoding="async" src="./../Images/testamonialImg.jpg" class="img-fluid">
+                        <h4 class="pt-4 mb-0">Mitchell Stark</h4>
+                        <p>CEO ABC Enterprise</p> 
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-8 col-sm-6 ps-md-4 pt-sm-0 pt-4">
+                    <h4>Awesome Work</h4>
+                    <p>“Really great service. They really took my individual case to heart. Their team is very helpful. They all work
+                        together in an impressive way to make sure that my needs were met and I walked out pain
+                        free.”</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Testimonial Section Exit -->
+
+    <!--Appointment section --> 
+    <section class="appointment_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+                    <h3>Request your appointment and start your smile makeover!</h3>
+                    <a href="#" class="mt-5 main-btn fill-btn">Request Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment section Exit -->
+
+
+    <!-- Footer section --> 
+    <section id="contact" class="footer_wrapper wrapper">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Clinic Location</h5>
+                    <p class="ps-0 fa fa-location-arrow">	Nawinna Medicare Hospitals.
+                        No.416, Nawinna, Maharagama,
+                        Sri Lanka</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> No. 106, Colombo Rd, Borelesfamuwa</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>0112 222 222</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>medilab@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1 "></div>
+
+                <div class="col-lg-3 col-md-4 mb-5">
+                    <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-1"></div>
+                <div class="col-lg-2 col-md-1">
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0 ">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section exit -->
+
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="../functions/mainJs.js"></script>
+</body>
+
+</html>
+
+        

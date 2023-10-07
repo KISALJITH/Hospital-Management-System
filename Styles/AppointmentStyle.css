@@ -1,0 +1,39 @@
+
+
+.appointment-inner{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid green;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.appointment-outer{
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    margin: 3% 3%;
+    padding: 5px;
+    -webkit-box-shadow: 5px 5px 17px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 17px 7px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 17px 7px rgba(0,0,0,0.75);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.form-subTopics{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-confirm{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,8 @@
+.patient-menu{
+    border: 1px solid red;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

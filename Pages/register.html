@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Styles/loginStyle.css">
+    <link rel="stylesheet" href="./../Styles/mainStyle.css">
+    <link rel="stylesheet" href="./../Styles/registerStyle.css">
+
+      <!-- Bootstrap 5 CDN Links -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+       <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- Navbar section --> 
+     <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img decoding="async" src="./../Images/navBarIcon.png" class="img-fluid nav-img" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav  menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item mt-3 mt-lg-0">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Navbar section end -->
+
+    <!-- Form -->
+    <div class="login-outer">
+        <div class="login-inner" style=" background: hsla(0, 1%, 68%, 0.55);
+        backdrop-filter: blur(30px);">
+            <form>
+
+                <h1 style="color:black; margin-top: 10px; margin-bottom: 15px; display: flex; justify-content: center; ">Register Form</h1>
+
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="regName">Name</label>
+                    <input type="text" id="regName" class="form-control" placeholder="Enter Your Name Here" />
+                  </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="regEmail">Email address</label>
+                  <input type="email" id="regEmail" class="form-control" placeholder="Enter Email Adress Here"/>
+                </div>
+              
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="regPassword">Password</label>
+                  <input type="password" id="regPassword" class="form-control" placeholder="Enter Password Here" />
+                </div>
+
+                <!-- Confirm Password input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="regConfirmPassword">Confirm Password</label>
+                    <input type="password" id="regConfirmPassword" class="form-control" placeholder="Enter Password Here Again" />
+                  </div>
+              
+                <!-- Submit button -->
+                <button type="button" class="btn btn-primary btn-block mb-4" onclick="register()">SIGN IN</button>
+              
+                <!-- Register buttons -->
+                <div class="text-center">
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+              
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+              
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+              </form>
+        </div>
+    </div>
+    
+
+     <!-- Footer section --> 
+     <section id="contact" class="footer_wrapper wrapper">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Clinic Location</h5>
+                    <p class="ps-0 fa fa-location-arrow">	Nawinna Medicare Hospitals.
+                        No.416, Nawinna, Maharagama,
+                        Sri Lanka</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> No. 106, Colombo Rd, Borelesfamuwa</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>0112 222 222</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>medilab@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1 "></div>
+
+                <div class="col-lg-3 col-md-4 mb-5">
+                    <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-1"></div>
+                <div class="col-lg-2 col-md-1">
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0 ">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+                   
+    <!-- Footer section exit -->
+
+    <!-- //SDK -->
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="./../functions/firebaseConfig.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./../functions/register.js"></script>
+</body>
+</html>
