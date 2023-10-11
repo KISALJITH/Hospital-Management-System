@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="./../Styles/dashboard.css" />
     <link rel="stylesheet" href="./../Styles/patientDashboard.css" />
+
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <title>Bootstap 5 Responsive Admin Dashboard</title>
 </head>
 
@@ -78,9 +81,9 @@
             <div class="container-fluid px-4">
 
                 <div class="patient-menu">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-patient-btn" data-bs-whatever="@mdo" type="submit"><i class="fa fa-plus me-2" style="color: rgb(32, 226, 32);"></i>  Add Doctor</button>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#remove-patient-btn" data-bs-whatever="@mdo" type="submit"><i class="fa fa-minus me-2" style="color: red;"></i>  Remove Doctor</button>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-patient-btn" data-bs-whatever="@mdo" type="submit"><i class="fa fa-pen me-2" ></i>  Edit Doctor</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-patient-btn" data-bs-whatever="@mdo" type="submit"><i class="fa fa-plus me-2" style="color: rgb(32, 226, 32);"></i>  Add Patient</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#remove-patient-btn" data-bs-whatever="@mdo" type="submit"><i class="fa fa-minus me-2" style="color: red;"></i>  Remove Patient</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-patient-btn" data-bs-whatever="@mdo" type="submit"><i class="fa fa-pen me-2" ></i>  Edit Patient</button>
 
 
                     <form class="d-flex" role="search" style="width: 30%;">
@@ -270,7 +273,10 @@
     </div>
     <!-- end page-content-wrapper -->
     </div>
-
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="./../functions/firebaseConfig.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./../functions/patientDashbord.js"></script>
 </body>

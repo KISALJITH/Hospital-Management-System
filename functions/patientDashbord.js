@@ -5,21 +5,21 @@ toggleButton.onclick = function () {
     el.classList.toggle("toggled");
 };
 
-function addPatient(name, nic, joinedDate){
-    this.name=name;
-    this.nic=nic;
-    this.joinedDate=joinedDate;
-
-}
 
 createPatient=()=>{
 
-    const tempPatient = new addPatient(
-        document.getElementById("add-patient-name").value,
-        document.getElementById("patinet-NIC").value,
-        document.getElementById("register-date").value
-    )
+    const tempPatient = {
+       name: document.getElementById("add-patient-name").value,
+        nic: document.getElementById("patinet-NIC").value,
+        registerDate: document.getElementById("register-date").value
+    }
 
     const database = firebase.firestore();
-    database.collection("patients"); 
+    database.collection("patients")
+    .add(tempPatient)
+    .then((response)=>{
+        console.log(response);
+    }
+    ).catch((error)=>
+    console.log(error)); 
 }
