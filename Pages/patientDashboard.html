@@ -15,7 +15,7 @@
     <title>Bootstap 5 Responsive Admin Dashboard</title>
 </head>
 
-<body>
+<body onload="loadPatients()">
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-white side-bar" id="sidebar-wrapper">
@@ -111,7 +111,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="patient-NIC" class="col-form-label">NIC :</label>
-                                <input type="text" class="form-control" id="patinet-NIC">
+                                <input type="text" class="form-control" id="patient-NIC">
                               </div>
                               <div class="mb-3">
                                 <label for="register-date" class="col-form-label">Date Join :</label>
@@ -128,8 +128,8 @@
                     </div>
                   </div>
 
-            <!-- Removing Doctor -->
-            <div class="modal fade" id="remove-patient-btn" tabindex="-1" aria-labelledby="remove-Doctor-btnLabel" aria-hidden="true">
+            <!-- Removing Patient -->
+            <div class="modal fade" id="remove-patient-btn" tabindex="-1" aria-labelledby="remove-patient-btnLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -139,8 +139,8 @@
                     <div class="modal-body">
                       <form>
                         <div class="mb-3">
-                            <label for="doctor-NIC" class="col-form-label">NIC :</label>
-                            <input type="text" class="form-control" id="doctor-NIC">
+                            <label for="patient-NIC" class="col-form-label">NIC :</label>
+                            <input type="text" class="form-control" id="patient-NIC">
                           </div>
                       </form>
                     </div>
@@ -152,39 +152,27 @@
                 </div>
               </div>
                   
-            <!-- Edit Doctor -->
-            <div class="modal fade" id="edit-Doctor-btn" tabindex="-1" aria-labelledby="edit-Doctor-btnLabel" aria-hidden="true">
+            <!-- Edit patient -->
+            <div class="modal fade" id="edit-patient-btn" tabindex="-1" aria-labelledby="edit-patient-btnLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Doctor Details</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Patient Details</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form>
                         <div class="mb-3">
-                          <label for="add-doctor-name" class="col-form-label">Name :</label>
-                          <input type="text" class="form-control" id="add-doctor-name">
+                          <label for="add-patient-name" class="col-form-label">Name :</label>
+                          <input type="text" class="form-control" id="add-patient-name">
                         </div>
                         <div class="mb-3">
-                            <label for="doctor-registration-no" class="col-form-label">Registration No :</label>
-                            <input type="text" class="form-control" id="doctor-registration-no">
-                          </div>
-                        <div class="mb-3">
-                            <label for="doctor-NIC" class="col-form-label">NIC :</label>
-                            <input type="text" class="form-control" id="doctor-NIC">
-                          </div>
-                        <div class="mb-3">
-                            <label for="doctor-specialized" class="col-form-label">Specialized Area :</label>
-                            <input type="text" class="form-control" id="doctor-specialized">
+                            <label for="patient-NIC" class="col-form-label">NIC :</label>
+                            <input type="text" class="form-control" id="patient-NIC">
                           </div>
                           <div class="mb-3">
-                            <label for="educational-qualification" class="col-form-label">Educational Qualifications :</label>
-                            <input type="text" class="form-control" id="educational-qualification">
-                          </div>
-                          <div class="mb-3">
-                            <label for="join-date" class="col-form-label">Date Join :</label>
-                            <input type="date" class="form-control" id="join-date">
+                            <label for="register-date" class="col-form-label">Date Join :</label>
+                            <input type="date" class="form-control" id="register-date">
                           </div>
                         
                       </form>
@@ -198,7 +186,7 @@
               </div>
 
 
-                <!-- Add ptient End -->
+                <!-- edit patient End -->
 
                 <div class="row my-5">
                     <h3 class="fs-4 mb-3">Patient List</h3>
@@ -207,63 +195,16 @@
                             <thead>
                                 <tr>
                                     <th scope="col" width="50">#</th>
+                                    <th scope="col">Name</th>
                                     <th scope="col">NIC</th>
-                                    <th scope="col">First Name</th>
-                                    <th scope="col">Last Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Telephone No</th>
+                                    <th scope="col">Date join</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Television</td>
-                                    <td>Jonny</td>
-                                    <td>$1200</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Laptop</td>
-                                    <td>Kenny</td>
-                                    <td>$750</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Cell Phone</td>
-                                    <td>Jenny</td>
-                                    <td>$600</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Fridge</td>
-                                    <td>Killy</td>
-                                    <td>$300</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Books</td>
-                                    <td>Filly</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Gold</td>
-                                    <td>Bumbo</td>
-                                    <td>$1800</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Pen</td>
-                                    <td>Bilbo</td>
-                                    <td>$75</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Notebook</td>
-                                    <td>Frodo</td>
-                                    <td>$36</td>
-                                </tr>
+
+                            <tbody id="table-body-patients">
                             </tbody>
+
                         </table>
                     </div>
                 </div>
