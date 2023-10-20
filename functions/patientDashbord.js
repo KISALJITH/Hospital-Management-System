@@ -27,15 +27,18 @@ const createPatient=()=>{
 patientId=undefined;
 // Load Data from DB
 const loadPatients =()=>{
+    $('#table-content').remove();
+
     const firestore=firebase.firestore();
     firestore.collection('patients')
     .get()
     .then((result)=>{
         result.forEach((records) => {
+            console.log(result)
             const data =records.data();
 
             const row =`
-            <tr>
+            <tr id="table-content">
                 <td>${records.id}</td>
                 <td>${data.name}</td>
                 <td>${data.nic}</td>
@@ -52,6 +55,12 @@ const loadPatients =()=>{
     })
 
 }
+function setModalData(name, nic, date) {
+    $('#add-patient-name').val(name);
+    $('#patient-NIC').val(nic);
+    $('#register-date').val(date);
+}
+
 
 //Update data
 const updateData=(id)=>{
@@ -63,6 +72,14 @@ const updateData=(id)=>{
 
         if(response.exists){
             const data =response.data();
+
+            // $('#edit-patient-btn').modal({}, $('', {
+            //     $("#add-patient-name").val(data.name)
+            // })); 
+            
+            setModalData(data.name, data.nic, '2023-10-20');
+            $('#edit-patient-btn').modal('show');
+
                 $("#add-patient-name").val(data.name);
                 $("#patient-NIC").val(data.nic);
                 $("#register-date").val(data.registerDate);
@@ -92,5 +109,15 @@ const updateRecords=()=>{
 
 //Delete data
 const deleteData=(id)=>{
+    const firestore=firebase.firestore();
+    firestore.collection("patients")
+    .doc(patientId)
+    .delete()
+    .then(()=>{
+        alert("Deleted!")
+        patientId=undefined;
+        loadPatients();
+        
+    })
 
 }
